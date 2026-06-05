@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML</title>
+  </head>
+  <body>
+    <nav><h1>Nav</h1></nav>
+    <main>
+      <h1>Main</h1>
+      <section>
+        <a href="https://reshihg.github.io/" rel="author">Página del autor</a>
+      </section>
+      <article>
+        <h1>Formulario</h1>
+        <form
+          name="Formulario ejemplo"
+          method="get"
+          action=""
+          autocomplete="off"
+        >
+          <fieldset>
+            <legend>Fieldset 1</legend>
+            <label for="Nombre" spellcheck="true">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" autofocus />
+            <input type="hidden" value="Input oculto" />
+            <label for="Buscar">Search</label>
+            <input type="search" name="Buscar" id="Buscar" />
+            <input type="datetime-local" name="" id="" />
+          </fieldset>
+          <fieldset>
+            <legend>Fieldset 2</legend>
+            <label for="vehiculo">Vehiculo</label>
+            <select name="vehiculo" id="vehiculo">
+              <option selected value="">------------------</option>
+              <optgroup label="Ecológicos">
+                <option value="Patines">Patines</option>
+                <option value="Bicicleta">Bicicleta</option>
+              </optgroup>
+              <optgroup label="Contaminantes">
+                <option value="Auto">Auto</option>
+                <option value="Crucero">Crucero</option>
+                <option value="Transbordador espacial">
+                  Transbordador espacial
+                </option>
+              </optgroup>
+            </select>
+            <label
+              >Datalist Minerales<input list="minerales" name="minerales"
+            /></label>
+            <datalist id="minerales">
+              <option value="Carbón">Carbón</option>
+              <option value="Cuarzo">Cuarzo</option>
+              <option value="Plutonio">Plutonio</option>
+              <option value="Hielo">Hielo</option>
+            </datalist>
+            <label for="Rango">Range</label>
+            <input type="range" name="Rango" id="Rango" />
+            <br />
+            <br />
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Button</button>
+          </fieldset>
+        </form>
+        <form
+          oninput="
+            x.value =
+              parseInt(a.value) /
+              ((parseInt(b.value) / 100) * (parseInt(b.value) / 100))
+          "
+        >
+          <fieldset>
+            <legend>Calcula IMC solo con HTML</legend>
+            <label for="a">Peso en Kilogramos</label>
+            <input type="number" name="" id="a" value="60" />
+            <br />
+            <label for="b">Altura en centímetros</label>
+            <input type="number" id="b" value="25" />
+            <br />
+            <label for="IMC">IMC = </label>
+            <output id="IMC" name="x" for="a b"
+              ><progress max="50" value="x"></progress
+            ></output>
+          </fieldset>
+        </form>
+        <dialog open>
+          <p>Molesta ventana de dialogo</p>
+        </dialog>
+        <label for="file">File progress:</label>
+        <progress id="file" max="100" value="70">70%</progress>
+        <br />
+        <br />
+        <details>
+          <summary><strong>Da clic para ver los secretos</strong></summary>
+          <ul>
+            <li>No es lo que estás pensando</li>
+            <li>Siempre escuchan</li>
+            <li>El ruido que escuchas en la noche no es lo que crees</li>
+          </ul>
+        </details>
+        <br /><br />
+        <h4>Presión arterial</h4>
+        <p>Baja: <meter value="15" low="33" high="66" max="100"></meter></p>
+        <p>Normal: <meter value="40" low="33" high="66" max="100"></meter></p>
+        <p>Alta: <meter value="70" low="33" high="66" max="100"></meter></p>
+        <br />
+        <figcaption>
+          <img
+            src="assets/img/ballena.jpg"
+            alt="ballena"
+            style="width: 200px"
+          />
+          <br />
+          <caption>
+            Esto es una ballena dentro de un figcaption
+          </caption>
+        </figcaption>
+        <hr>
+        <p>Haga click en la flor e insectos de la siguiente imagen para obtener más información</p>
+        <img
+          src="assets/img/flores_insectos.png"
+          alt="Insectos polinizadores"
+          usemap="#map1780616686631"
+        />
+        <map id="map1780616686631" name="map1780616686631"
+          ><area
+            shape="rect"
+            coords="124,13,258,177"
+            title="Mariposa hormiquera de lunares"
+            alt="Mariposa hormiquera de lunares"
+            href="https://es.wikipedia.org/wiki/Phengaris_arion"
+            target="_self" /><area
+            shape="rect"
+            coords="289,5,420,81"
+            title="Abeja"
+            alt="Abeja"
+            href="https://es.wikipedia.org/wiki/Anthophila"
+            target="_self" /><area
+            shape="rect"
+            coords="424,61,580,147"
+            title="Chince Apestosa"
+            alt="Chince Apestosa"
+            href="https://es.wikipedia.org/wiki/Aelia_acuminata"
+            target="_self" /><area
+            shape="rect"
+            coords="0,183,686,289"
+            title="Girasol"
+            alt="Girasol"
+            href="https://es.wikipedia.org/wiki/Helianthus_annuus"
+            target="_self"
+        /></map>
+        <hr />
+        <table class="sortable">
+          <caption>
+            Ejemplo de tabla
+          </caption>
+          <colgroup>
+            <col
+              span="1"
+              class="col-one"
+              style="background-color: sandybrown"
+            />
+            <col
+              span="2"
+              class="col-content"
+              style="background-color: turquoise"
+            />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Columna 1</th>
+              <th>Columna 2</th>
+              <th>Columna 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>F1 C1</td>
+              <td>F1 C2</td>
+              <td>F1 C2</td>
+            </tr>
+            <tr>
+              <td>F2 C1</td>
+              <td>F2 C2</td>
+              <td>F2 C2</td>
+            </tr>
+            <tr>
+              <td>F3 C1</td>
+              <td>F3 C2</td>
+              <td>F3 C2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Footer 1</td>
+              <td>Footer 2</td>
+              <td>Footer 3</td>
+            </tr>
+          </tfoot>
+        </table>
+        <hr />
+        <h3>Inframe de youtube</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gfDsRHPUNQU?si=iaROJ50S31Qp4NP_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <hr>
+        <h3>Página incrustada (embed)</h3>
+        <embed src="assets/books/Diccionario_del_diablo-Bierce_Ambrose.pdf" type="application/pdf" width="100%" height="1000px">
+
+      </article>
+    </main>
+    <footer><h3>Footer</h3></footer>
+  </body>
+</html>
