@@ -4,11 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hachi+Maru+Pop&family=Mansalva&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header><h1>Ejercicios básicos</h1></header>
+    <h2>Backgrounds</h2>
+    <section id="background-color" class="background">
+      <h3>background-color</h3>
+      <p>Background: color image repeat attachment position</p>
+    </section>
+    <section id="background-image-1" class="background">
+      <h3>background-image-1</h3>
+      <p>
+        background-image:
+        url(http://practicas.test/ejercicios_css/basicos//assets/img/eclipse.jpg);
+      </p>
+      <p>background-attachment: fixed;</p>
+      <p>background-size:cover;</p>
+      <p>background-position: center;</p>
+    </section>
+    <section id="background-image-2" class="background">
+      <h3>background-image-2</h3>
+      <p>
+        color: whitesmoke;
+        background-image:url(http://practicas.test/ejercicios_css/basicos//assets/img/eclipse.jpg);
+      </p>
+      <p>background-attachment: scroll;</p>
+      <p>background-size: 100vw;</p>
+    </section>
+    <br />
+    <section class="section-fuentes">
+      <h1>Fuentes</h1>
+      <article id="roboto">
+        <h1>Roboto</h1>
+        <h2>Roboto</h2>
+        <h3>Roboto</h3>
+        <h4>Roboto</h4>
+        <h5>Roboto</h5>
+        <h6>Roboto</h6>
+        <p>
+          FontLorem <strong>ipsum dolor</strong>, sit amet consectetur
+          adipisicing elit. Perferendis nisi totam,
+          <em>recusandae ab soluta iure modi aperiam minus doloribus</em>
+        </p>
+        <p class="W900">Weight:900</p>
+        <p class="W800">Weight:800</p>
+        <p class="W700">Weight:700</p>
+        <p class="W600">Weight:600</p>
+        <p class="W500">Weight:500</p>
+        <p class="W400">Weight:400</p>
+        <p class="W300">Weight:300</p>
+        <p class="W200">Weight:200</p>
+        <p class="W100">Weight:100</p>
+      </article>
+      <article id="hachi-maru">
+        <h1>Hachi Maru</h1>
+        <h2>Hachi Maru</h2>
+        <h3>Hachi Maru</h3>
+        <h4>Hachi Maru</h4>
+        <h5>Hachi Maru</h5>
+        <h6>Hachi Maru</h6>
+        <p>
+          Lorem <strong>ipsum dolor</strong>, sit amet consectetur adipisicing
+          elit. Perferendis nisi totam,
+          <em>recusandae ab soluta iure modi aperiam minus doloribus</em>
+          voluptas nostrum quaerat autem cupiditate. Nemo possimus beatae
+          necessitatibus eos sapiente!
+        </p>
+        <p class="W900">Weight:900</p>
+        <p class="W800">Weight:800</p>
+        <p class="W700">Weight:700</p>
+        <p class="W600">Weight:600</p>
+        <p class="W500">Weight:500</p>
+        <p class="W400">Weight:400</p>
+        <p class="W300">Weight:300</p>
+        <p class="W200">Weight:200</p>
+        <p class="W100">Weight:100</p>
+      </article>
+      <article id="mozilla-text">
+        <h1>Mozilla text</h1>
+        <h2>Mozilla text</h2>
+        <h3>Mozilla text</h3>
+        <h4>Mozilla text</h4>
+        <h5>Mozilla text</h5>
+        <h6>Mozilla text</h6>
+        <p>
+          Lorem <strong>ipsum dolor</strong>, sit amet consectetur adipisicing
+          elit. Perferendis nisi totam,
+          <em>recusandae ab soluta iure modi aperiam minus doloribus</em>
+          voluptas nostrum quaerat autem cupiditate. Nemo possimus beatae
+          necessitatibus eos sapiente!
+        </p>
+      </article>
+      <article id="great-vibes">
+        <h1>Great vibes</h1>
+        <h2>Great vibes</h2>
+        <h3>Great vibes</h3>
+        <h4>Great vibes</h4>
+        <h5>Great vibes</h5>
+        <h6>Great vibes</h6>
+        <p>
+          Lorem <strong>ipsum dolor</strong>, sit amet consectetur adipisicing
+          elit. Perferendis nisi totam,
+          <em>recusandae ab soluta iure modi aperiam minus doloribus</em>
+          voluptas nostrum quaerat autem cupiditate. Nemo possimus beatae
+          necessitatibus eos sapiente!
+        </p>
+      </article>
+      <article id="align-text">
+        <h2>Alineación de textos (text-align)</h2>
+        <div class="start">
+          <h4>Start</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia eveniet, explicabo cupiditate non fuga delectus harum
+            dolore corrupti quasi voluptatum perspiciatis excepturi id, ab quo
+            libero illum alias aliquid.
+          </p>
+        </div>
+        <div class="end">
+          <h4>End</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia eveniet, explicabo cupiditate non fuga delectus harum
+            dolore corrupti quasi voluptatum perspiciatis excepturi id, ab quo
+            libero illum alias aliquid.
+          </p>
+        </div>
+        <div class="center">
+          <h4>Center</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia eveniet, explicabo cupiditate non fuga delectus harum
+            dolore corrupti quasi voluptatum perspiciatis excepturi id, ab quo
+            libero illum alias aliquid.
+          </p>
+        </div>
+        <div class="justify">
+          <h4>justify</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia eveniet, explicabo cupiditate non fuga delectus harum
+            dolore corrupti quasi voluptatum perspiciatis excepturi id, ab quo
+            libero illum alias aliquid.
+          </p>          
+        </div>
+      </article>
+    </section>
+
+    <section class="position">
+      <h2>Position</h2>
+      <article>
+        <h4>static</h4>
+        <div></div>
+        <div class="static"></div>
+        <div></div>
+        <div></div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero, provident modi soluta consequatur quod at. Labore magni, odio accusantium hic facere alias eius molestiae possimus maiores modi culpa praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab est incidunt veritatis ex aut, aliquam facilis, ducimus saepe culpa libero consequuntur exercitationem. Nihil est aspernatur dicta! Repudiandae, est sint?</p>
+      </article>
+      <article>
+        <h4>relative</h4>
+        <div></div>
+        <div class="relative"></div>
+        <div></div>
+        <div></div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero, provident modi soluta consequatur quod at. Labore magni, odio accusantium hic facere alias eius molestiae possimus maiores modi culpa praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab est incidunt veritatis ex aut, aliquam facilis, ducimus saepe culpa libero consequuntur exercitationem. Nihil est aspernatur dicta! Repudiandae, est sint?</p>
+      </article>
+      <article>
+        <h4>absolute</h4>
+        <div></div>
+        <div class="absolute"></div>
+        <div></div>
+        <div></div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero, provident modi soluta consequatur quod at. Labore magni, odio accusantium hic facere alias eius molestiae possimus maiores modi culpa praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab est incidunt veritatis ex aut, aliquam facilis, ducimus saepe culpa libero consequuntur exercitationem. Nihil est aspernatur dicta! Repudiandae, est sint?</p>
+      </article>
+      <article>
+        <h4>sticky</h4>
+        <div></div>
+        <div class="sticky"></div>
+        <div></div>
+        <div></div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero, provident modi soluta consequatur quod at. Labore magni, odio accusantium hic facere alias eius molestiae possimus maiores modi culpa praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab est incidunt veritatis ex aut, aliquam facilis, ducimus saepe culpa libero consequuntur exercitationem. Nihil est aspernatur dicta! Repudiandae, est sint?</p>
+      </article>
+    </section>
+
+    <section class="shadows-and-borders">
+      <h2>Text shadow</h2>
+      <article class="text-shadow">
+        <div id="ts1"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+        <div id="ts2"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+        <div id="ts3"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+        <div id="ts4"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+        <div id="ts5"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+        <div id="ts6"><h4>¿El paso más importante que un hombre puede dar? Siempre, el siguiente. </h4></div>
+      </article>
+      <h2>Box shadow</h2>
+      <article class="box-shadow">
+        <div id="bs1"></div>
+        <div id="bs2"></div>
+        <div id="bs3"></div>
+        <div id="bs4"></div>
+        <div id="bs5"></div>
+        <div id="bs6"></div>
+      </article>
+    </section>
+
     <h2>Grid-template-area</h2>
     <section class="grid-container">
       <header>Header</header>

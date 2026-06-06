@@ -1,0 +1,305 @@
+:root {
+  --primary-orange: #ff8200;
+  --secondary-orange: #fd703b;
+  --threerd-orange: #ff8200;
+  --primary-black: #0e0b16;
+  --secondary-black: #233237;
+  --primary-white: #f8f8ff;
+  --primary-gray: #4abdac;
+}
+
+/**************************** Backgrounds ****************************/
+.background {
+  width: 100vw;
+  height: 50vh;
+}
+#background-color {
+  color: white;
+  background-color: var(--primary-orange);
+}
+
+#background-image-1 {
+  color: whitesmoke;
+  background-image: url(http://practicas.test/ejercicios_css/basicos//assets/img/eclipse.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#background-image-2 {
+  color: whitesmoke;
+  background-image: url(http://practicas.test/ejercicios_css/basicos//assets/img/eclipse.jpg);
+  background-attachment: scroll;
+  background-size: 100vw;
+}
+
+/************************* FIN Backgrounds ***************************/
+
+/*************************** Fuentes ***************************/
+.section-fuentes article {
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 3px solid var(--primary-orange);
+}
+
+#roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+#roboto .W900 {
+  font-weight: 900;
+}
+#roboto .W800 {
+  font-weight: 800;
+}
+#roboto .W700 {
+  font-weight: 700;
+}
+#roboto .W600 {
+  font-weight: 600;
+}
+#roboto .W500 {
+  font-weight: 500;
+}
+#roboto .W400 {
+  font-weight: 400;
+}
+#roboto .W300 {
+  font-weight: 300;
+}
+#roboto .W200 {
+  font-weight: 200;
+}
+#roboto .W100 {
+  font-weight: 100;
+}
+
+#hachi-maru {
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+#hachi-maru .W900 {
+  font-weight: 900;
+}
+#hachi-maru .W800 {
+  font-weight: 800;
+}
+#hachi-maru .W700 {
+  font-weight: 700;
+}
+#hachi-maru .W600 {
+  font-weight: 600;
+}
+#hachi-maru .W500 {
+  font-weight: 500;
+}
+#hachi-maru .W400 {
+  font-weight: 400;
+}
+#hachi-maru .W300 {
+  font-weight: 300;
+}
+#hachi-maru .W200 {
+  font-weight: 200;
+}
+#hachi-maru .W100 {
+  font-weight: 100;
+}
+
+#mozilla-text {
+  font-family: "Mozilla Text", sans-serif;
+}
+
+#great-vibes {
+  font-family: "Great Vibes", cursive;
+}
+
+/* Alineación de textos */
+
+#align-text div {
+  border: 1px solid var(--primary-gray);
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 1rem;
+  min-width: 10px;
+  width: 30%;
+}
+
+.start {
+  text-align: start;
+}
+
+.end {
+  text-align: end;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/************************* Fin fuentes ***************************/
+
+/*************************** Position ***************************/
+
+.position {
+  width: 100vw;
+  height: 300px;
+}
+
+.position article{
+  display: inline-block;
+  min-width: 120px;
+  width: 24vw;
+  height: 85%;
+  padding: 1rem;
+  background-color: var(--primary-white);
+  overflow: scroll;
+  position: relative;
+}
+
+.position div{
+  background-color: var(--secondary-orange);
+  border: 2px solid var(--secondary-black);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.position .static{
+  position: static;
+  background-color:cornflowerblue;
+}
+.position .relative{
+  position: relative;
+  top: 15px;
+  left: 10px;
+  background-color:cornflowerblue;
+
+}
+.position .absolute{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background-color:cornflowerblue;
+
+} 
+.position .sticky{
+  position: sticky;
+  top: 1rem;
+  background-color:cornflowerblue;
+
+}
+
+/************************* Fin position ***************************/
+
+
+/************************* Shadows ***************************/
+.shadows-and-borders article{
+  padding: 2rem;
+}
+
+.shadows-and-borders div{
+  margin: 15px;
+  width: 28%;
+  display: inline-block;
+}
+
+/* Text shadows */
+
+#ts1{
+  text-shadow: 1px 1px 1px goldenrod;
+}
+#ts2{
+  text-shadow: 10px 1px 1px goldenrod;
+}
+#ts3{
+  text-shadow: 1px 10px 1px goldenrod;
+}
+#ts4{
+  text-shadow: 1px 1px 10px goldenrod;
+}
+#ts5{
+  text-shadow: 3px 3px 10px orange;
+}
+#ts6{
+  text-shadow: 0px 0px 5px orange;
+}
+
+
+/* Box shadows */
+
+.box-shadow div{
+  height: 50px;
+  background-color: var(--primary-orange);
+}
+
+#bs1{
+  box-shadow: 2px 2px 2px var(--secondary-orange);
+}
+#bs2{
+  box-shadow: 10px 2px 2px var(--secondary-orange);
+}
+#bs3{
+  box-shadow: 2px 10px 2px var(--secondary-orange);
+}
+#bs4{
+  box-shadow: 2px 2px 10px var(--secondary-orange);
+}
+#bs5{
+  box-shadow: 10px 10px 10px var(--secondary-orange);
+}
+#bs6{
+  box-shadow: -5px -5px 5px var(--secondary-orange);
+}
+
+
+
+/*********************** Fin shadows ***************************/
+
+
+
+/*************************** Grid ***************************/
+.grid-container {
+  display: grid;
+
+  height: 500px;
+
+  grid-template-columns: 15% 60% 25%;
+  grid-template-rows: 15% 65% 20%;
+  grid-template-areas:
+    "header header header"
+    "menu main sidebar"
+    "footer footer footer";
+}
+
+.grid-container > header {
+  grid-area: header;
+  background-color: antiquewhite;
+}
+
+.grid-container > menu {
+  grid-area: menu;
+  background-color: burlywood;
+}
+
+.grid-container > main {
+  grid-area: main;
+  background-color: cornflowerblue;
+}
+
+.grid-container > sidebar {
+  grid-area: sidebar;
+  background-color: teal;
+}
+
+.grid-container > footer {
+  grid-area: footer;
+  background-color: goldenrod;
+}
+
+/*************************** Fin Grid ***************************/
