@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* ************ Reset CSS ************** */
+/* Elimina el margen y los bordes para evitar sorpresas inesperadas */
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+/* Ayuda a tener un lienzo completo */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Hace más fácil el manejo de imágenes */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Evita el desbordamiento de las imágenes */
+img,
+video {
+  height: auto;
+}
+
+/* Elimina la decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ************ FIN del Reset CSS ************** */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8ff;
+}
+
+.articulo {
+  background-color: #e5e4e2;
+}
+.articulo .titulo {
+  background-color: #233237;
+  color: #f8f8ff;
+  margin: 0;
+  padding: 2rem;
+}
+.articulo .div__contenedor__titulo--padding {
+  padding: 1rem 2rem;
+}
+.articulo .div__contenedor__titulo--padding .autor {
+  color: brown;
+  font-style: italic;
+  font-weight: 700;
+}
+.articulo .div__contenedor__titulo--padding p a {
+  text-decoration: none;
+}
+
+.button__boton__articulo--estilo, .btn-mascotitas, .btn-unam, .btn-orange {
+  margin: 0.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-orange {
+  background-color: #fd703b;
+  border: 3px solid #233237;
+  color: #f9f9f9;
+}
+.btn-orange:hover {
+  background-color: #f9f9f9;
+  border: 3px solid #fd703b;
+  color: #000;
+}
+
+.btn-unam {
+  background-color: #cb9904;
+  border: 3px solid #1c3661;
+  color: #f9f9f9;
+}
+.btn-unam:hover {
+  background-color: #f9f9f9;
+  border: 3px solid #cb9904;
+  color: #000;
+}
+
+.btn-mascotitas {
+  background-color: #75a3bd;
+  border: 3px solid #8e5264;
+  color: #f9f9f9;
+}
+.btn-mascotitas:hover {
+  background-color: #f9f9f9;
+  border: 3px solid #75a3bd;
+  color: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+/* ************ Reset CSS ************** */
+/* Elimina el margen y los bordes para evitar sorpresas inesperadas */
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+/* Ayuda a tener un lienzo completo */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Hace más fácil el manejo de imágenes */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Evita el desbordamiento de las imágenes */
+img,
+video {
+  height: auto;
+}
+
+/* Elimina la decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ************ FIN del Reset CSS ************** */

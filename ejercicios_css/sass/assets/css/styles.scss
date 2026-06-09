@@ -1,0 +1,92 @@
+//************************** Módulos ************************
+
+@use "reset";
+
+//*************************** Mixin ***************************
+// Son básicamente funciones en SASS que se pueden llamar en las clases
+// para agregar parámetros modificables según los valores, en este ejemplo
+// el margin y el padding
+@mixin margin-padding($margin: 1rem, $padding: 1rem) {
+  margin: $margin;
+  padding: $padding;
+}
+
+// Y se usan con la siguiente sintaxis::after
+// @include margin-padding(5px, 1.5rem)
+
+@mixin boton-colores($background-color: #000, $border-color: #c2c2c2) {
+  background-color: $background-color;
+  border: 3px solid $border-color;
+  color: #f9f9f9;
+  // ---------------- Anidación------------------
+  &:hover {
+    background-color: #f9f9f9;
+    border: 3px solid $background-color;
+    color: #000;
+  }
+}
+
+//*************************** Variables ***************************
+
+$orange-primary: #fd703b;
+$black-primary: #233237;
+$orange-light: #ff8200;
+$grey-light: #e5e4e2;
+$orange-dark: #fc4a1a;
+$black-dark: #0e0b16;
+$white-background: #f8f8ff;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white-background;
+}
+
+.articulo {
+  background-color: $grey-light;
+  .titulo {
+    background-color: $black-primary;
+    color: $white-background;
+    @include margin-padding(0, 2rem);
+  }
+  .div__contenedor__titulo--padding {
+    padding: 1rem 2rem;
+    .autor {
+      color: brown;
+      font-style: italic;
+      font-weight: 700;
+    }
+    p {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// ************************* Clases extendidas **************************
+// Las clases extendidas sirven para agregar lo que tiene una clase en otra, por ejemplo:
+// .button__boton__articulo--estilo es llamada en las clases:
+// .btn-orange
+// .btn-unam
+// .btn-mascotitas
+
+.button__boton__articulo--estilo {
+  @include margin-padding(0.5rem, 10px);
+  border-radius: 10px;
+}
+
+.btn-orange {
+  @extend .button__boton__articulo--estilo;
+  @include boton-colores($orange-primary, $black-primary);
+}
+
+.btn-unam {
+  @extend .button__boton__articulo--estilo;
+  @include boton-colores(#cb9904, #1c3661);
+}
+
+.btn-mascotitas {
+  @extend .button__boton__articulo--estilo;
+  @include boton-colores(#75a3bd, #8e5264);
+}
