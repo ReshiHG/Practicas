@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "mjml": "^5.3.0",
+    "onchange": "^7.1.0"
+  },
+  "scripts": {
+    "watch:mjml": "onchange 'ejemplo_1.mjml' -- npx -r mjml ejemplo_1.mjml -o ejemplo_1.html"
+  }
+}
