@@ -1,30 +1,17 @@
 <mjml>
+  <!-- Agregagos el head con clases y configuraciones globales personalizadas -->
+  <mj-include path="./partials/head.mjml" />
+
   <mj-body>
-    <mj-section>
-      <mj-column>
-        <mj-text
-          align="center"
-          font-style="italic"
-          font-size="20px"
-          font-family="Helvetica Neue"
-        >
-          Fundación SCP
-        </mj-text>
-      </mj-column>
-    </mj-section>
+    <!-- Se usa include para incluir un archivo parcial -->
+    <mj-include path="./partials/header.mjml" />
 
     <mj-section
       background-url="./assets/img/fondo_Scp.jpg"
       background-size="cover"
     >
       <mj-column>
-        <mj-text
-          align="center"
-          font-style="semibold"
-          font-size="40px"
-          color="#fafafa"
-          font-family="Helvetica Neue"
-        >
+        <mj-text mj-class="slogan-title">
           Seguridad, Contención y Protección
         </mj-text>
         <mj-button background-color="#ce2029" color="#fafafa" href="#">
@@ -35,13 +22,8 @@
 
     <mj-section background-color="#f5f5f5">
       <mj-column>
-        <mj-text
-          font-style="semibold"
-          font-size="20px"
-          font-family="Helvetica Neue"
-          >Sobre la fundación</mj-text
-        >
-        <mj-text align="justify">
+        <mj-text mj-class="encabezado">Sobre la fundación</mj-text>
+        <mj-text align="justify" mj-class="p">
           La Fundación SCP se encarga de localizar y contener individuos,
           entidades, ubicaciones y objetos que violan la ley natural. Si usted
           ha recibido este correo es debido a que se encontró una brecha de
@@ -59,39 +41,50 @@
     </mj-section>
 
     <mj-section>
-      <mj-column padding="10px">
+      <mj-column vertical-align="middle">
         <mj-image
-          height="auto"
-          src="./assets/img/SCP-clasificado.jpg"
+        padding="0px 0px 10% 10%"
+          src="./assets/img/SCP-clasificado-v.jpg"
           alt="SCP-***"
         />
       </mj-column>
       <mj-column>
-        <mj-text
-          font-style="semibold"
-          font-size="20px"
-          font-family="Helvetica Neue"
-        >
-          Sobre el SPC-***
-        </mj-text>
-        <mj-text align="justify">
-          Se conoce poco sobre el SCP-**, sin embargo se ha reportado un número
-          creciente de anomalias en ************, se ha dado aviso a las
-          personas en la ubicación en un intento desesperado para ubicarlo con
-          precisión, mantengase en su hogar y evite investigar más a fondo, se
-          han tenido reportes de personas que terminan ******* en minutos, no
+        <mj-text mj-class="encabezado"> Sobre el SCPs-████ </mj-text>
+        <mj-text align="justify" mj-class="p">
+          Se conoce poco sobre el SCP-████, sin embargo se ha reportado un
+          número creciente de anomalias en █████████████████, se ha dado aviso a
+          las personas en la ubicación en un intento desesperado para ubicarlo
+          con precisión, mantengase en su hogar y evite investigar más a fondo,
+          se han tenido reportes de personas que terminan ******* en minutos, no
           recomendamos hacerse el héroe o heroina, favor de informar
           inmediatamente cualquier anomalía y mantengase seguro.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section background-color="#f5f5f5">
+    <mj-section>
       <mj-column>
-        <mj-social>
-          <mj-social-element name="facebook">Share</mj-social-element>
-        </mj-social>
+        <mj-accordion>
+          <mj-accordion-element>
+            <mj-accordion-title font-family="REM, arial">Me estoy sintiendo extraño, ¿Debo reportarlo?</mj-accordion-title>
+            <mj-accordion-text mj-class="p">
+              <span>
+                ¡Por supuesto!, cualquier anomalia que detecte por muy común o irrelevante que usted crea debe reportarla, el equipo de SCP se encargará de ayudarlo, solo necesita contactarnos con el botón al inicio
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+          <mj-accordion-element>
+            <mj-accordion-title font-family="REM, arial">¿Esto es una broma?</mj-accordion-title>
+            <mj-accordion-text mj-class="p">
+              <span>
+                Lamentamos que usted crea eso, sin embargo debe tomarse este correo con seriedad si valora la tranquilidad de su localidad, y sobre todo su vida.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+        </mj-accordion>
       </mj-column>
     </mj-section>
+
+    <mj-include path="./partials/footer.mjml" />
   </mj-body>
 </mjml>

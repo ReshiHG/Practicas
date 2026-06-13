@@ -1,0 +1,12 @@
+<mj-section>
+  <mj-column>
+    <mj-text
+      align="center"
+      font-style="italic"
+      font-size="20px"
+      font-family="REM, arial"
+    >
+      Fundación SCP
+    </mj-text>
+  </mj-column>
+</mj-section>

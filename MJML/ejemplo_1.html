@@ -57,9 +57,11 @@
     </style>
     <![endif]-->
   <!--[if !mso]><!-->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
   <style type="text/css">
-    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+    @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap);
   </style>
   <!--<![endif]-->
   <style type="text/css">
@@ -96,11 +98,78 @@
         width: auto !important;
       }
     }
+
+    noinput.mj-accordion-checkbox {
+      display: block !important;
+    }
+
+    @media yahoo,
+    only screen and (min-width:0) {
+      .mj-accordion-element {
+        display: block;
+      }
+
+      .mj-accordion-checkbox[type="checkbox"],
+      .mj-accordion-less {
+        display: none !important;
+      }
+
+      .mj-accordion-checkbox[type="checkbox"]+* .mj-accordion-title {
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .mj-accordion-checkbox[type="checkbox"]+* .mj-accordion-content {
+        overflow: hidden;
+        display: none;
+      }
+
+      .mj-accordion-checkbox[type="checkbox"]+* .mj-accordion-more {
+        display: block !important;
+      }
+
+      .mj-accordion-checkbox:checked+* .mj-accordion-content {
+        display: block;
+      }
+
+      .mj-accordion-checkbox:checked+* .mj-accordion-more {
+        display: none !important;
+      }
+
+      .mj-accordion-checkbox:checked+* .mj-accordion-less {
+        display: block !important;
+      }
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-title {
+      cursor: auto;
+      touch-action: auto;
+      -webkit-user-select: auto;
+      -moz-user-select: auto;
+      user-select: auto;
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-content {
+      overflow: hidden;
+      display: block;
+    }
+
+    .moz-text-html input.mj-accordion-checkbox+* .mj-accordion-ico {
+      display: none;
+    }
+
+    @goodbye {
+      @gmail
+    }
   </style>
 </head>
 
 <body style="word-spacing:normal;">
   <div aria-roledescription="email" role="article" lang="und" dir="auto" style="word-spacing:normal;">
+    <!-- Se usa include para incluir un archivo parcial -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
@@ -113,7 +182,7 @@
                   <tbody>
                     <tr>
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Helvetica Neue;font-size:20px;font-style:italic;line-height:1;text-align:center;color:#000000;">Fundación SCP</div>
+                        <div style="font-family:REM, arial;font-size:20px;font-style:italic;line-height:1;text-align:center;color:#000000;">Fundación SCP</div>
                       </td>
                     </tr>
                   </tbody>
@@ -138,7 +207,7 @@
                     <tbody>
                       <tr>
                         <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                          <div style="font-family:Helvetica Neue;font-size:40px;font-style:semibold;line-height:1;text-align:center;color:#fafafa;">Seguridad, Contención y Protección</div>
+                          <div style="font-family:REM, arial;font-size:40px;font-weight:400;line-height:1;text-align:center;color:#fafafa;">Seguridad, Contención y Protección</div>
                         </td>
                       </tr>
                       <tr>
@@ -146,8 +215,8 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                             <tbody>
                               <tr>
-                                <td align="center" bgcolor="#ce2029" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#ce2029;" valign="middle">
-                                  <a href="#" style="display:inline-block;background:#ce2029;color:#fafafa;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> ¡Notificar entidad! </a>
+                                <td align="center" bgcolor="#ce2029" role="presentation" style="border:none;border-radius:10px;cursor:auto;mso-padding-alt:10px 25px;background:#ce2029;" valign="middle">
+                                  <a href="#" style="display:inline-block;background:#ce2029;color:#fafafa;font-family:Roboto, arial;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:10px;" target="_blank"> ¡Notificar entidad! </a>
                                 </td>
                               </tr>
                             </tbody>
@@ -176,12 +245,12 @@
                   <tbody>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Helvetica Neue;font-size:20px;font-style:semibold;line-height:1;text-align:left;color:#000000;">Sobre la fundación</div>
+                        <div style="font-family:REM, arial;font-size:20px;font-weight:700;line-height:1;text-align:left;color:#000000;">Sobre la fundación</div>
                       </td>
                     </tr>
                     <tr>
                       <td align="justify" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:justify;color:#000000;">La Fundación SCP se encarga de localizar y contener individuos, entidades, ubicaciones y objetos que violan la ley natural. Si usted ha recibido este correo es debido a que se encontró una brecha de seguridad en su ubicación, favor de notificar cualquier cosa que perciba fuera de lugar lo antes posible.</div>
+                        <div style="font-family:Roboto, arial;font-size:13px;line-height:20px;text-align:justify;color:#000000;">La Fundación SCP se encarga de localizar y contener individuos, entidades, ubicaciones y objetos que violan la ley natural. Si usted ha recibido este correo es debido a que se encontró una brecha de seguridad en su ubicación, favor de notificar cualquier cosa que perciba fuera de lugar lo antes posible.</div>
                       </td>
                     </tr>
                     <tr>
@@ -189,8 +258,8 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                           <tbody>
                             <tr>
-                              <td align="center" bgcolor="#1b1b1b" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#1b1b1b;" valign="middle">
-                                <a href="http://lafundacionscp.wikidot.com/" style="display:inline-block;background:#1b1b1b;color:#fafafa;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> Conocer más </a>
+                              <td align="center" bgcolor="#1b1b1b" role="presentation" style="border:none;border-radius:10px;cursor:auto;mso-padding-alt:10px 25px;background:#1b1b1b;" valign="middle">
+                                <a href="http://lafundacionscp.wikidot.com/" style="display:inline-block;background:#1b1b1b;color:#fafafa;font-family:Roboto, arial;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:10px;" target="_blank"> Conocer más </a>
                               </td>
                             </tr>
                           </tbody>
@@ -212,25 +281,17 @@
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
                   <tbody>
                     <tr>
-                      <td style="vertical-align:top;padding:10px;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                      <td align="center" style="font-size:0px;padding:0px 0px 10% 10%;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                           <tbody>
                             <tr>
-                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:230px;">
-                                        <img alt="SCP-***" src="./assets/img/SCP-clasificado.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="230" height="auto" />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <td style="width:290px;">
+                                <img alt="SCP-***" src="./assets/img/SCP-clasificado-v.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="290" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -246,12 +307,101 @@
                   <tbody>
                     <tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Helvetica Neue;font-size:20px;font-style:semibold;line-height:1;text-align:left;color:#000000;">Sobre el SPC-***</div>
+                        <div style="font-family:REM, arial;font-size:20px;font-weight:700;line-height:1;text-align:left;color:#000000;">Sobre el SCPs-████</div>
                       </td>
                     </tr>
                     <tr>
                       <td align="justify" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:justify;color:#000000;">Se conoce poco sobre el SCP-**, sin embargo se ha reportado un número creciente de anomalias en ************, se ha dado aviso a las personas en la ubicación en un intento desesperado para ubicarlo con precisión, mantengase en su hogar y evite investigar más a fondo, se han tenido reportes de personas que terminan ******* en minutos, no recomendamos hacerse el héroe o heroina, favor de informar inmediatamente cualquier anomalía y mantengase seguro.</div>
+                        <div style="font-family:Roboto, arial;font-size:13px;line-height:20px;text-align:justify;color:#000000;">Se conoce poco sobre el SCP-████, sin embargo se ha reportado un número creciente de anomalias en █████████████████, se ha dado aviso a las personas en la ubicación en un intento desesperado para ubicarlo con precisión, mantengase en su hogar y evite investigar más a fondo, se han tenido reportes de personas que terminan ******* en minutos, no recomendamos hacerse el héroe o heroina, favor de informar inmediatamente cualquier anomalía y mantengase seguro.</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="font-size:0px;padding:1px;word-break:break-word;">
+                        <table cellspacing="0" cellpadding="0" class="mj-accordion" style="width:100%;border-collapse:collapse;border:none;border-bottom:none;font-family:Roboto, arial;">
+                          <tbody>
+                            <tr>
+                              <td style="padding:0px;">
+                                <label class="mj-accordion-element" style="font-size:13px;font-family:Roboto, arial;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;" /><!--<![endif]-->
+                                  <div>
+                                    <div class="mj-accordion-title">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="width:100%;background-color:#fafafa;font-size:18px;font-family:REM, arial;padding:15px;"> Me estoy sintiendo extraño, ¿Debo reportarlo? </td>
+                                            <!--[if !mso | IE]><!-->
+                                            <td class="mj-accordion-ico" style="padding:16px;background:#fafafa;vertical-align:middle;"><img src="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-down.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;" /><img src="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-up.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;" /></td><!--<![endif]-->
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="mj-accordion-content">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="background:#ffffff;font-size:13px;font-family:Roboto, arial;line-height:20px;padding:15px;">
+                                              <span> ¡Por supuesto!, cualquier anomalia que detecte por muy común o irrelevante que usted crea debe reportarla, el equipo de SCP se encargará de ayudarlo, solo necesita contactarnos con el botón al inicio </span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:0px;">
+                                <label class="mj-accordion-element" style="font-size:13px;font-family:Roboto, arial;">
+                                  <!--[if !mso | IE]><!--><input class="mj-accordion-checkbox" type="checkbox" style="display:none;" /><!--<![endif]-->
+                                  <div>
+                                    <div class="mj-accordion-title">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="width:100%;background-color:#fafafa;font-size:18px;font-family:REM, arial;padding:15px;"> ¿Esto es una broma? </td>
+                                            <!--[if !mso | IE]><!-->
+                                            <td class="mj-accordion-ico" style="padding:16px;background:#fafafa;vertical-align:middle;"><img src="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-down.png" alt="+" class="mj-accordion-more" style="display:none;width:24px;height:24px;" /><img src="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-up.png" alt="-" class="mj-accordion-less" style="display:none;width:24px;height:24px;" /></td><!--<![endif]-->
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="mj-accordion-content">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-bottom:none;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="background:#ffffff;font-size:13px;font-family:Roboto, arial;line-height:20px;padding:15px;">
+                                              <span> Lamentamos que usted crea eso, sin embargo debe tomarse este correo con seriedad si valora la tranquilidad de su localidad, y sobre todo su vida. </span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -274,29 +424,16 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                      <td align="center" style="font-size:0px;padding:0px 30%;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                           <tbody>
                             <tr>
-                              <td style="padding:4px;vertical-align:middle;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3b5998;border-radius:3px;width:20px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="font-size:0;height:20px;vertical-align:middle;width:20px;">
-                                        <img alt="" src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png" style="border-radius:3px;display:block;" width="20" />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                              <td style="vertical-align:middle;padding:4px 4px 4px 0;text-align:left;">
-                                <span style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"> Share </span>
+                              <td style="width:540px;">
+                                <img alt="Logo de la fundación SCP" src="./assets/img/SCP-footer.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="540" height="auto" />
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                        <!--[if mso | IE]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </tbody>

@@ -1,0 +1,14 @@
+Para generar el html
+
+  npx mjml -r ejemplo_1.mjml -o ejemplo.html
+
+
+
+Generar HTML con "include" en el mjml (al final se incluyen las carpetas permitidas)
+
+    npx mjml -r ejemplo_1.mjml -o ejemplo_1.html --config.allowIncludes true
+
+  incluye carpetas
+
+    npx mjml -r ejemplo_1.mjml -o ejemplo_1.html --config.allowIncludes true --config.includePath ./partials
+

@@ -1,0 +1,56 @@
+<mj-head>
+  <mj-font
+    name="REM"
+    href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+  />
+  <mj-font
+    name="Roboto"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  />
+
+  <mj-attributes>
+    <!-- Agrego una fuente  -->
+
+    <!-- Modifico un atributo para todos los TEXT -->
+    <mj-button border-radius="10px"/>
+
+    <!-- Crea una clase para reutilizar llamandola -->
+    <mj-class
+      name="slogan-title"
+      align="center"
+      color="#fafafa"
+      font-weight="400"
+      font-size="40px"
+      font-family="REM, arial"
+    />
+    <mj-class
+      name="encabezado"
+      font-weight="700"
+      font-size="20px"
+      font-family="REM, arial"
+    />
+    <mj-class name="p" line-height="20px"/>
+
+    <!-- Modifico globalmente la fuente -->
+    <mj-all font-family="Roboto, arial" />
+
+    <!-- Para el acordeon -->
+
+    <mj-accordion border="none" padding="1px" />
+    <mj-accordion-element
+      icon-wrapped-url="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-down.png"
+      icon-unwrapped-url="https://static.mailjet.com/mjml-website/documentation/accordion-arrow-up.png"
+      icon-height="24px"
+      icon-width="24px"
+    />
+    <mj-accordion-title
+      background-color="#fafafa"
+      padding="15px"
+      font-size="18px"
+    />
+    <mj-accordion-text
+      background-color="#fff"
+      padding="15px"
+    />
+  </mj-attributes>
+</mj-head>

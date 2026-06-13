@@ -1,0 +1,9 @@
+<mj-section background-color="#f5f5f5">
+  <mj-column>
+    <mj-image
+      src="./assets/img/SCP-footer.png"
+      alt="Logo de la fundación SCP"
+      padding="0px 30%"
+    />
+  </mj-column>
+</mj-section>
