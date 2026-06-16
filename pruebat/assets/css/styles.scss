@@ -1,0 +1,269 @@
+//************************** Módulos ************************
+
+@use "reset";
+
+//************************* Variables ************************
+
+$gris_primario: #373737;
+$gris_claro: #434343;
+$gris_claro_2: #494949;
+$naranja_primario: #ff6d40;
+$naranja_claro: #ff7f46;
+$naranja_claro_2: #fda985;
+$purpura: #9c4b9b;
+$blanco: #fff;
+$azul: #4581ff;
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+//***************** Componentes generales ****************************
+
+a {
+  color: $naranja_claro;
+  &:hover {
+    color: $naranja_claro_2;
+  }
+}
+
+button {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn__primary {
+  background-color: $naranja_primario;
+  color: $blanco;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-item {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+//*************************** Nav ****************************
+
+nav {
+  background-color: $gris_primario;
+  color: $blanco;
+  height: 65px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  .div__logo {
+    display: flex;
+    gap: 1rem;
+    a {
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .div__search {
+    form {
+      height: 100%;
+      background-color: $gris_claro_2;
+      border-radius: 10px;
+      padding: 5px 15px;
+      display: flex;
+      gap: 15px;
+      .input__search {
+        background-color: transparent;
+        height: 100%;
+        color: $blanco;
+        font-size: 16px;
+      }
+      .button__search {
+        background-color: transparent;
+        padding: 0;
+        img {
+          height: 20px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .div__sesion {
+    display: flex;
+    gap: 15px;
+    button {
+      color: #fff;
+      font-size: medium;
+      display: flex;
+      gap: 5px;
+      span {
+        margin: auto 0;
+        img {
+          height: 20px;
+        }
+      }
+      &:hover {
+        scale: calc(1.05);
+        transition: 0.5s ease-in-out;
+      }
+    }
+    .btn__primary {
+      font-weight: 600;
+    }
+  }
+}
+
+//*************************** Body ****************************
+
+.main-content {
+  .main-content__title {
+    display: flex;
+    justify-content: start;
+    color: $purpura;
+    img {
+      height: 30px;
+    }
+    h1 {
+      font-weight: 400;
+    }
+  }
+}
+
+.lesson-content {
+  display: flex;
+  margin-bottom: 4rem;
+  menu {
+    padding: 1.5rem;
+    width: 40%;
+    .acordeon__title {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      background-color: $purpura;
+      color: $blanco;
+      padding: 10px 15px;
+      &:hover {
+        cursor: pointer;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      img {
+        height: 24px;
+      }
+    }
+    .acordeon__content {
+      padding: 1rem 2rem;
+      li {
+        list-style: square;
+      }
+      button {
+        font-size: 16px;
+        color: grey;
+        &.active {
+          color: $purpura;
+        }
+      }
+    }
+  }
+  article {
+    padding: 1.5rem;
+    width: 60%;
+    .lesson-content__title {
+      color: $purpura;
+      font-weight: 400;
+      padding-bottom: 10px;
+    }
+    .lesson-content__controls{
+      display: flex;
+      justify-content: stretch;
+      button{
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        &.active{
+          border-bottom: 3px solid $purpura;
+          border-radius: 0;
+          p{
+            color: $purpura;
+          }
+        }
+        img{
+          height: 25px;
+        }
+        p{
+          font-size: 18px;
+          font-weight: 500;
+          color: gray;
+        }
+      }
+    }
+    .lesson-content__content{
+      margin: 1rem;
+      padding: 1rem;
+      border: 5px solid #f0f0f0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+//*************************** Footer ****************************
+
+footer {
+  background-color: $gris_claro;
+  color: $blanco;
+  position: relative;
+  p {
+    margin-top: 50px;
+    text-align: center;
+  }
+  img {
+    margin: 50px auto 0 auto;
+    height: 40px;
+  }
+}
+
+.div__contact__float {
+  position: absolute;
+  top: -35px;
+  left: calc(50vw - 360px);
+  border-radius: 15px;
+  background-image: url(/pruebat/assets/img/fondo_dos_colores.png);
+  color: $blanco;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 720px;
+  div {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: $blanco;
+    color: $azul;
+    padding: 10px 20px;
+    border-radius: 20px;
+    &:hover {
+      scale: calc(1.03);
+      transform: 0.3s ease;
+    }
+  }
+}

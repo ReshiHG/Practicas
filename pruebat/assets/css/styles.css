@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* ************ Reset CSS ************** */
+/* Elimina el margen y los bordes para evitar sorpresas inesperadas */
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+/* Ayuda a tener un lienzo completo */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Hace más fácil el manejo de imágenes */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Evita el desbordamiento de las imágenes */
+img,
+video {
+  height: auto;
+}
+
+/* Elimina la decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ************ FIN del Reset CSS ************** */
+* {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: #ff7f46;
+}
+a:hover {
+  color: #fda985;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.btn__primary {
+  background-color: #ff6d40;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-item {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+nav {
+  background-color: #373737;
+  color: #fff;
+  height: 65px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .div__logo {
+  display: flex;
+  gap: 1rem;
+}
+nav .div__logo a img {
+  height: 35px;
+}
+nav .div__search form {
+  height: 100%;
+  background-color: #494949;
+  border-radius: 10px;
+  padding: 5px 15px;
+  display: flex;
+  gap: 15px;
+}
+nav .div__search form .input__search {
+  background-color: transparent;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+nav .div__search form .button__search {
+  background-color: transparent;
+  padding: 0;
+}
+nav .div__search form .button__search img {
+  height: 20px;
+}
+nav .div__search form .button__search:hover {
+  cursor: pointer;
+}
+nav .div__sesion {
+  display: flex;
+  gap: 15px;
+}
+nav .div__sesion button {
+  color: #fff;
+  font-size: medium;
+  display: flex;
+  gap: 5px;
+}
+nav .div__sesion button span {
+  margin: auto 0;
+}
+nav .div__sesion button span img {
+  height: 20px;
+}
+nav .div__sesion button:hover {
+  scale: 1.05;
+  transition: 0.5s ease-in-out;
+}
+nav .div__sesion .btn__primary {
+  font-weight: 600;
+}
+
+.main-content .main-content__title {
+  display: flex;
+  justify-content: start;
+  color: #9c4b9b;
+}
+.main-content .main-content__title img {
+  height: 30px;
+}
+.main-content .main-content__title h1 {
+  font-weight: 400;
+}
+
+.lesson-content {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.lesson-content menu {
+  padding: 1.5rem;
+  width: 40%;
+}
+.lesson-content menu .acordeon__title {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #9c4b9b;
+  color: #fff;
+  padding: 10px 15px;
+}
+.lesson-content menu .acordeon__title:hover {
+  cursor: pointer;
+}
+.lesson-content menu .acordeon__title h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.lesson-content menu .acordeon__title img {
+  height: 24px;
+}
+.lesson-content menu .acordeon__content {
+  padding: 1rem 2rem;
+}
+.lesson-content menu .acordeon__content li {
+  list-style: square;
+}
+.lesson-content menu .acordeon__content button {
+  font-size: 16px;
+  color: grey;
+}
+.lesson-content menu .acordeon__content button.active {
+  color: #9c4b9b;
+}
+.lesson-content article {
+  padding: 1.5rem;
+  width: 60%;
+}
+.lesson-content article .lesson-content__title {
+  color: #9c4b9b;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.lesson-content article .lesson-content__controls {
+  display: flex;
+  justify-content: stretch;
+}
+.lesson-content article .lesson-content__controls button {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.lesson-content article .lesson-content__controls button.active {
+  border-bottom: 3px solid #9c4b9b;
+  border-radius: 0;
+}
+.lesson-content article .lesson-content__controls button.active p {
+  color: #9c4b9b;
+}
+.lesson-content article .lesson-content__controls button img {
+  height: 25px;
+}
+.lesson-content article .lesson-content__controls button p {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+}
+.lesson-content article .lesson-content__content {
+  margin: 1rem;
+  padding: 1rem;
+  border: 5px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #434343;
+  color: #fff;
+  position: relative;
+}
+footer p {
+  margin-top: 50px;
+  text-align: center;
+}
+footer img {
+  margin: 50px auto 0 auto;
+  height: 40px;
+}
+
+.div__contact__float {
+  position: absolute;
+  top: -35px;
+  left: calc(50vw - 360px);
+  border-radius: 15px;
+  background-image: url(/pruebat/assets/img/fondo_dos_colores.png);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 720px;
+}
+.div__contact__float div {
+  font-size: 20px;
+  font-weight: 600;
+}
+.div__contact__float button {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #4581ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.div__contact__float button:hover {
+  scale: 1.03;
+  transform: 0.3s ease;
+}
+
+/*# sourceMappingURL=styles.css.map */
