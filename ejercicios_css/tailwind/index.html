@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Ejercicios Tailwind</title>
   </head>
   <body>
-    <h1 class="bg-red-500 text-white p-4 font-extrabold text-4xl">Tailwind</h1>
+    <h1 class="text-4xl text-white font-bold bg-orange-500 p-8 text-center">
+      Tailwind
+    </h1>
     <section class="container mx-auto">
       <article>
         <div class="bg-blue-900 p-4 font-light text-white">
@@ -217,6 +219,156 @@
               </div>
             </div>
           </div>
+        </div>
+      </article>
+    </section>
+    <h1 class="text-4xl text-white font-bold bg-orange-500 p-8 text-center">
+      Ejercicio 2: <span class="font-bold">GRID</span>
+    </h1>
+    <section class="container mx-auto py-4 text-center">
+      <h4 class="text-2xl font-semibold">Grid y Gap</h4>
+      <code>grid grid-cols-3 gap-4</code>
+      <article class="mt-2 mb-8 grid grid-cols-3 gap-4">
+        <div class="bg-orange-400 text-white text-3xl">1</div>
+        <div class="bg-orange-400 text-white text-3xl">2</div>
+        <div class="bg-orange-400 text-white text-3xl">3</div>
+      </article>
+      <h4 class="text-2xl font-semibold">
+        Grid responsive por tamaños: <i class="font-normal">sm, md, lg</i>
+      </h4>
+      <code
+        >grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+        gap-4</code
+      >
+      <article
+        class="mt-2 mb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      >
+        <div class="bg-blue-500 text-white text-3xl">1</div>
+        <div class="bg-blue-500 text-white text-3xl">2</div>
+        <div class="bg-blue-500 text-white text-3xl">3</div>
+        <div class="bg-blue-500 text-white text-3xl">4</div>
+      </article>
+      <h4 class="text-2xl font-semibold">Grid span</h4>
+      <code
+        >grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+        gap-4</code
+      >
+      <article
+        class="mt-2 mb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      >
+        <div class="col-span-2 bg-cyan-700 text-white text-3xl">1</div>
+        <div class="bg-cyan-700 text-white text-3xl">1</div>
+        <div class="bg-cyan-700 text-white text-3xl">2</div>
+        <div class="bg-cyan-700 text-white text-3xl">3</div>
+        <div class="bg-cyan-700 text-white text-3xl">4</div>
+      </article>
+      <h4 class="text-2xl font-semibold">Grid col-start y col-end</h4>
+      <article class="mt-2 mb-8 grid grid-cols-3 gap-4">
+        <div class="col-start-3 bg-emerald-600 text-white text-3xl">
+          Col-start-3
+        </div>
+        <div class="col-start-2 col-end-4 bg-emerald-600 text-white text-3xl">
+          col-start-2 col-end-4
+        </div>
+        <div class="col-start-1 col-end-4 bg-emerald-600 text-white text-3xl">
+          col-start-1 col-end-4
+        </div>
+        <div class="bg-emerald-600 text-white text-3xl">A</div>
+        <div class="bg-emerald-600 text-white text-3xl">B</div>
+        <div class="col-start-1 bg-emerald-600 text-white text-3xl">
+          col-start-1
+        </div>
+      </article>
+      <h4 class="text-2xl font-semibold">Grid col, row y span</h4>
+      <code></code>
+      <article class="mt-2 mb-8 grid grid-cols-5 grid-rows-4 gap-4">
+        <div class="bg-lime-600 text-white text-xl">Clientes</div>
+        <div class="bg-lime-600 text-white text-xl">Ordenes</div>
+        <div
+          class="bg-lime-600 text-white text-xl col-span-3 col-end-6 row-start-1 row-end-3 content-center"
+        >
+          Gráfico: Predicciones vs realidad
+        </div>
+        <div class="bg-lime-600 text-white text-xl">Ganancia</div>
+        <div class="bg-lime-600 text-white text-xl">Crecimiento</div>
+        <div
+          class="bg-lime-600 text-white text-xl col-start-1 col-end-4 row-start-3 row-end-5 content-center"
+        >
+          Gráfica: ganancia
+        </div>
+        <div
+          class="bg-lime-600 text-white text-xl col-span-2 row-span-2 content-center"
+        >
+          Paises y ganancia
+        </div>
+      </article>
+    </section>
+    <h1 class="text-4xl text-white font-bold bg-orange-500 p-8 text-center">
+      Ejercicio 3: <span class="font-bold">Personalización</span>
+    </h1>
+    <section class="container mx-auto py-4 text-justify">
+      <h4 class="text-2xl font-semibold">@theme</h4>
+      <article class="mt-2 mb-8">
+        <p>
+          Para personalizar se debe usar la directiva
+          <strong>@theme</strong> como se muestra a continuación:
+        </p>
+        <br />
+        <div class="bg-gray-700 text-white p-4">
+          <code>@import "tailwindcss";</code><br />
+          <code>@theme {</code><br />
+          <code> --color-unam-azul: #1c3661;</code><br />
+          <code> --color-unam-dorado: #cb9904;</code><br />
+          <code>}</code><br /><br />
+        </div>
+        <br />
+        <p>
+          Y estos colores se añaden según la sintaxis de tailwind, por ejemplo:
+        </p>
+        <br />
+        <div class="flex justify-center">
+          <button
+            class="bg-unam-azul border-2 border-unam-dorado rounded-lg text-white py-2 px-4 hover:cursor-pointer hover:bg-unam-dorado hover:border-unam-azul hover:font-semibold"
+          >
+            bg-unam-azul <br />
+            border-unam-dorado
+          </button>
+        </div>
+        <h1 class="font-texturina font-bold text-4xl text-center border">
+          Fuente Texturina
+        </h1>
+      </article>
+    </section>
+    <h1 class="text-4xl text-white font-bold bg-orange-500 p-8 text-center">
+      Ejercicio 4: <span class="font-bold">Flexbox</span>
+    </h1>
+    <section class="container mx-auto py-4 text-justify">
+      <article class="h-125 bg-amber-100 flex flex-wrap items-center justify-evenly gap-4 p-4">
+        <div class="bg-amber-400 p-4 rounded-3xl">
+          Lorem ipsum dolor sit amet, <br />
+          consectetur adipisicing elit.
+        </div>
+        <div class="bg-amber-400 p-4 rounded-3xl">Lorem ipsum</div>
+        <div class="bg-amber-400 p-4 rounded-3xl">
+          Lorem ipsum <br />
+          dolor sit amet
+        </div>
+        <div class="bg-amber-400 p-4 rounded-3xl">
+          Lorem ipsum dolor <br />
+          sit amet elit. <br />Consectetur, quis <br />
+          animi hic, voluptas a <br />
+          facilis culpa sed.
+        </div>
+        <div class="bg-amber-400 p-4 rounded-3xl">Lorem ipsum</div>
+        <div class="bg-amber-400 p-4 rounded-3xl">
+          Lorem ipsum <br />
+          dolor sit amet
+        </div>
+        <div class="bg-amber-400 p-4 rounded-3xl">
+          Lorem ipsum dolor <br />
+          sit amet elit. <br />Consectetur, quis <br />
+          animi hic, voluptas a <br />
+          facilis culpa sed.
         </div>
       </article>
     </section>
