@@ -343,7 +343,9 @@
       Ejercicio 4: <span class="font-bold">Flexbox</span>
     </h1>
     <section class="container mx-auto py-4 text-justify">
-      <article class="h-125 bg-amber-100 flex flex-wrap items-center justify-evenly gap-4 p-4">
+      <article
+        class="h-125 bg-amber-100 flex flex-wrap items-center justify-evenly gap-4 p-4"
+      >
         <div class="bg-amber-400 p-4 rounded-3xl">
           Lorem ipsum dolor sit amet, <br />
           consectetur adipisicing elit.
@@ -372,5 +374,40 @@
         </div>
       </article>
     </section>
+    <h1 class="text-4xl text-white font-bold bg-orange-500 p-8 text-center">
+      Ejercicio 5: <span class="font-bold">NavBar responsive</span>
+    </h1>
+    <section class="container mx-auto py-4 text-justify">
+      <nav class="bg-tailwind-500 p-4 h-auto md:h-20 flex flex-wrap gap-0 md:gap-8">
+        <div class="h-12 flex items-center gap-4 w-11/12 md:w-auto  ">
+          <a href="https://tailwindcss.com/">
+            <img class="h-12 text-amber-600" src="./assets/icons/tailwind-white.svg" alt="tailwind" />
+          </a>
+          <a href="https://tailwindcss.com/">
+            <h1 class="font-roboto font-semibold text-white text-2xl">Tailwind CSS</h1>
+          </a>
+        </div>
+        <div class="h-12 w-1/12 md:w-0 md:hidden">
+          <button id="btn-menu" class="hover:cursor-pointer h-full w-full">
+            <img class="svg-hamburguer h-6 m-auto" src="./assets/icons/menu-white.svg" alt="">
+            <img class="svg-x h-6 m-auto hidden" src="./assets/icons/cerrar-white.svg" alt="">
+          </button>
+        </div>
+        <div id="block-menu" class="flex-col md:flex-row flex-1 justify-between gap-4 hidden">
+          <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/docs/installation/using-vite">Docs</a>
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/blog">Blog</a>
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/showcase">Showcase</a>
+          </div>
+          <div class="flex flex-col md:flex-row items-center">
+            <a class="p-2 font-roboto font-normal text-md text-white border border-white rounded-lg hover:font-semibold hover:border-2" href="https://github.com/tailwindlabs/tailwindcss">Download</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="h-96"></section>
   </body>
+
+  <script type="module" src="./assets/js/index.js"></script>
+
 </html>
