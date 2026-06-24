@@ -20,8 +20,11 @@
   --color-tailwind-700: #1f6f73;
   --color-tailwind-800: #175357;
   --color-tailwind-900: #0f383a;
-  --color-tailwind-950: #081c1d;
+  --color-tailwind-950: #0f383a;
 
+  /* Cambiamos la fuente por defecto */
+  --default-font-family: "Roboto", sans-serif;
+
+  /* Agregamos una fuente personalizada */
   --font-texturina: "Texturina", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
 }

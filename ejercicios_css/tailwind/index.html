@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/hamburger.css">
     <title>Ejercicios Tailwind</title>
   </head>
   <body>
@@ -388,19 +389,34 @@
           </a>
         </div>
         <div class="h-12 w-1/12 md:w-0 md:hidden">
-          <button id="btn-menu" class="hover:cursor-pointer h-full w-full">
+          <!-- <button id="btn-menu" class="hover:cursor-pointer h-full w-full">
             <img class="svg-hamburguer h-6 m-auto" src="./assets/icons/menu-white.svg" alt="">
             <img class="svg-x h-6 m-auto hidden" src="./assets/icons/cerrar-white.svg" alt="">
-          </button>
+          </button> -->
+          <svg id="btn-menu" class="ham hamRotate ham7 h-full w-full" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
         </div>
-        <div id="block-menu" class="flex-col md:flex-row flex-1 justify-between gap-4 hidden">
+        <div id="block-menu" class="flex-col md:flex-row flex-1 justify-between gap-4 hidden md:flex">
           <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/docs/installation/using-vite">Docs</a>
-            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/blog">Blog</a>
-            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white hover:font-normal" href="https://tailwindcss.com/showcase">Showcase</a>
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white
+            border-b-2 border-transparent hover:border-tailwind-700 transition ease-in duration-200" href="https://tailwindcss.com/docs/installation/using-vite">Docs</a>
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white
+            border-b-2 border-transparent hover:border-tailwind-700 transition ease-in duration-200" href="https://tailwindcss.com/blog">Blog</a>
+            <a class="flex-1 md:flex-initial font-roboto font-light text-xl text-white
+            border-b-2 border-transparent hover:border-tailwind-700 transition ease-in duration-200" href="https://tailwindcss.com/showcase">Showcase</a>
           </div>
           <div class="flex flex-col md:flex-row items-center">
-            <a class="p-2 font-roboto font-normal text-md text-white border border-white rounded-lg hover:font-semibold hover:border-2" href="https://github.com/tailwindlabs/tailwindcss">Download</a>
+            <a class="p-2 font-roboto font-normal text-md text-white tracking-wide border border-white rounded-lg 
+            hover:bg-white hover:text-tailwind-500 transition ease-in duration-200" href="https://github.com/tailwindlabs/tailwindcss">Download</a>
           </div>
         </div>
       </nav>
