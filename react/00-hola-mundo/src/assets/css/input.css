@@ -1,0 +1,30 @@
+/* Importamos fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Importamos Tailwind base */
+@import "tailwindcss";
+
+/* Agregamos "variables" personalizadas */
+@theme {
+  --color-unam-azul: #1c3661;
+  --color-unam-dorado: #cb9904;
+
+  --color-tailwind-50: #d9f3f5;
+  --color-tailwind-100: #b2e8eb;
+  --color-tailwind-200: #8cdce0;
+  --color-tailwind-300: #66d1d6;
+  --color-tailwind-400: #40c5cc;
+  --color-tailwind-500: #2EA6AC;
+  --color-tailwind-600: #268b90;
+  --color-tailwind-700: #1f6f73;
+  --color-tailwind-800: #175357;
+  --color-tailwind-900: #0f383a;
+  --color-tailwind-950: #0f383a;
+
+  /* Cambiamos la fuente por defecto */
+  --default-font-family: "Roboto", sans-serif;
+
+  /* Agregamos una fuente personalizada */
+  --font-texturina: "Texturina", sans-serif;
+}
