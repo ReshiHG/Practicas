@@ -34,8 +34,7 @@ const formatUserName = (userName) => `@${userName}`;
     <>
       <TwitterFollowCardContainer>
         {
-          users.map(user => {
-            const {name, userName, isFollowing, imagePath} = user
+          users.map(({name, userName, isFollowing, imagePath}) => {
             return (
               <TwitterFollowCard
                 key={userName}
@@ -70,8 +69,8 @@ const formatUserName = (userName) => `@${userName}`;
           imagePath={"/src/assets/img/user_szeth_cuadrado.jpg"}
           isFollowing={false}
           formatUserName={formatUserName}
-        />
-        <TwitterFollowCard /> */}
+        /> */}
+        <TwitterFollowCard />
       </TwitterFollowCardContainer>
     </>
   );
