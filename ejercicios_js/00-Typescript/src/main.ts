@@ -1,5 +1,5 @@
 import './style.css'
-import './ejercicios/01-const-let'
+import './ejercicios'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
